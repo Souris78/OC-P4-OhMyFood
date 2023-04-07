@@ -1,0 +1,222 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    margin: 0 auto;
+    height: auto;
+}
+    header {
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        margin: 15px 20px;
+    }
+        header i {
+            color: #353535;
+            font-size: 20px;
+        }
+        header img {
+            width: 50%;
+            height: auto;   
+        }
+
+    /* SECTION 1 */
+   #la-note-enchantee{
+    background-image: url(images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+   }
+   #la-palette-du-gout{
+    background-image: url(images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+   }
+   #le-delice-des-sens{
+    background-image: url(images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
+   }
+   #a-la-francaise {
+    background-image: url(images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+   }
+    .backgroundimage {
+        padding-top: 155px;
+        background-position: top center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+    }
+
+    .backgroundradius {
+        background: #F7F7F7;
+        border-radius: 40px 40px 0 0;  
+    }
+
+    .flextitle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 20px;
+        margin: 20px;  
+    }
+
+    h1 {
+        font-family: 'Shrikhand';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 41px;
+    }
+        h1+i {
+            font-size: 25px;
+        }
+
+    .gridmenus {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding-bottom: 30px;
+    }
+    
+    h2 {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration: underline 3px solid #99E2D0;
+        text-underline-position: under left;
+        margin: 20px;
+        
+    }
+    
+        article {
+            width: auto;
+            background: #FFFFFF;
+            box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+            border-radius: 15.0431px;
+            margin: 5px 20px;
+            position: relative;
+        }
+
+            h3 {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                padding: 10px 0 0 15px;
+                margin: 0;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            h3+p {
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 18px;
+                padding-left: 15px;
+                margin-top: 5px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                width: calc(100% - 65px);
+            }
+            
+                article span {
+                    font-weight: bold;
+                    position: absolute;
+                    right: 20px;
+                }
+
+        
+        .buttonpinkgradient {
+            background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            border-radius: 30px;
+            padding: 15px 30px;
+            font-size: 16px;
+            line-height: 19px;
+            color: white;
+            border: hidden;
+            text-align: center;
+            margin: 35px 30px ;
+            width: 50%;
+            align-self: center;
+        }
+        
+/* FOOTER */
+.backgroundblack {
+    background: #353535;
+    width: 100%;
+}
+.flexfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 22px 25px;
+}
+    footer img {
+        width: 30%;
+        margin: 30px 0 0 20px;
+    }
+    footer ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+        .whitetext {
+            color: white;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration: none; 
+        }
+            footer i {
+                padding-right: 10px;
+            }
+            footer .fa-handshake-simple {
+                transform: rotate(-45deg);
+                padding-right: 5px;
+            }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+
+    header  img {
+        width :40%;
+    }
+
+    .flextitle {
+        justify-content: center;
+    }
+    h1 {
+        padding: 20px;
+    }
+    h1+i {
+        padding: 20px;
+    }
+
+    .backgroundradius {
+        margin: 0 100px;
+    }
+
+    .backgroundimage{
+        padding-top: 550px;
+    }
+    .gridmenus {
+        margin: 0 100px;
+    }
+
+    /* FOOTER*/
+    .backgroundblack {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: baseline;
+    }
+        footer img {
+            width: 10%;
+            margin: 30px;
+        }
+        .flexfooter {
+            flex-direction: row;
+            align-items: baseline;
+        }
+        .whitetext{
+            font-size: 16px;
+        }
+    }
+
