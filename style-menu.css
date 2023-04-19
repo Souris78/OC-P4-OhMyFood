@@ -70,6 +70,7 @@ body {
         flex-direction: column;
         width: auto;
         padding-bottom: 30px;
+        
     }
     
     h2 {
@@ -78,10 +79,18 @@ body {
         font-weight: 300;
         font-size: 16px;
         line-height: 19px;
-        text-decoration: underline 3px solid #99E2D0;
-        text-underline-position: under left;
+        border-bottom: 3px solid #99E2D0;
+        width: 40px;
         margin: 20px;
-        
+    }
+    .slide1 {
+        animation: slideMenus 2s;
+    }
+    .slide2 {
+        animation: slideMenus 4s;
+    }
+    .slide3 {
+        animation: slideMenus 6s;
     }
     
         article {
@@ -121,6 +130,17 @@ body {
                     position: absolute;
                     right: 20px;
                 }
+
+    @keyframes slideMenus {
+        from {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 
         
         .buttonpinkgradient {
