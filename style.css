@@ -74,30 +74,16 @@ body {
                 justify-content: center;
                 margin: 30px 0 ;
                 text-decoration: none;  
-                /*transition: box-shadow 0.7s ease-in-out, filter 0.7s ease-in-out;*/
-                animation-name: animButton;
-                animation-duration: 0.7s;
-                animation-delay: 1s;
-                animation-direction:alternate;
-                animation-iteration-count: infinite;
-                /*transition: all ease-in-out 0.7s;*/
+                transition: all ease-in-out 0.8s;
             }
+
             .linkbackgroundgradient:hover {
-                /*background: linear-gradient(177deg, #9f6fd9b8 -5.2%, #f686d6b5 110.74%);*/
-                box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.85);
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.45);
                 opacity: 0.8;
             }
 
-            @keyframes animButton {
-                from {
-                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-                    opacity:1;
-                }
-                to {
-                    box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.85);
-                    opacity: 0.8;
-                }
-            }
+          
            
     /* SECTION 2 FONCTIONNEMENT */
     .fonctionnement {
@@ -234,32 +220,35 @@ body {
                         width: auto;
                         position: relative;
                     }
-                    h3 {
-                        font-weight: 700;
-                        font-size: 19px;
-                        line-height: 21px;
-                        margin: 15px 0 0 15px;
-                    }
-                    p {
-                        font-size: 18px;
-                        font-weight: 300;
-                        line-height: 20px;
-                        margin: 5px 0 0 15px;  
-                    }
-                    .flexheart .fa-solid {
-                        position: absolute;
-                        right: 30px;
-                        color: transparent; 
-                        transition: all 3s ease-in-out;
-                        opacity: 0;
-                        
-                    }
-                    .fa-solid:hover {
-                        background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        opacity: 1;    
-                    }
+
+                        h3 {
+                            font-weight: 700;
+                            font-size: 19px;
+                            line-height: 21px;
+                            margin: 15px 0 0 15px;
+                        }
+                        p {
+                            font-size: 18px;
+                            font-weight: 300;
+                            line-height: 20px;
+                            margin: 5px 0 0 15px;  
+                        }
+                        .flexheart .fa-solid {
+                            position: absolute;
+                            right: 30px;
+                            color: transparent; 
+                            transition: all 1s ease-in-out;
+                            opacity: 0;
+                            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                        }
+                            .fa-solid:hover {
+                                opacity: 1;    
+                            }
+                            .flexheart .fa-solid:not(:hover) {
+                                background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%, transparent);
+                            }
 
     /* FOOTER */
     .backgroundblack {
