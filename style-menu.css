@@ -90,10 +90,6 @@ body {
         .boldheart:hover {
             opacity: 1;
         }
-
-        .boldheart:not(:hover) {
-            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%, transparent);
-        }
     
     /* MENUS APPARATION */
     .gridmenus {
@@ -340,12 +336,18 @@ body {
 
     .flextitle {
         justify-content: center;
+        width: 50%;
+        margin: 0 auto;
     }
+
     h1 {
         padding: 20px;
     }
-    h1+i {
+
+    i.fa-heart {
         padding: 20px;
+        right: -10px;
+        top: 21px;
     }
 
     .backgroundradius {
@@ -353,7 +355,12 @@ body {
     }
 
     .backgroundimage{
-        padding-top: 550px;
+        padding-top: 450px;
+    }
+
+    .gridmenus {
+        width: 70%;
+        margin: 0 auto;
     }
   
 
@@ -363,16 +370,21 @@ body {
         flex-direction: row-reverse;
         align-items: baseline;
     }
+
         footer img {
             width: 10%;
             margin: 30px;
         }
+
         .flexfooter {
             flex-direction: row;
             align-items: baseline;
         }
+
         .whitetext{
             font-size: 16px;
         }
     }
+
+
 
