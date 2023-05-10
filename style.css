@@ -2,7 +2,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     margin: 0 auto;
+    max-width: 1440px;
 }
+
+main
+
     .loader {
         margin: auto;
         position: fixed;
@@ -341,18 +345,12 @@ body {
             font-size: 16px;
         }
     
-    h2+ol {
-        grid-template-columns: repeat(3,1fr);
-    }
-        
-        .fonctionnement p, .coloricon {
-            font-size: 13px;
-        }
         .listnumbers {
             width: 6px;
             height: 6px;
             font-size:12px;
         }
+       
         .fonctionnement {
             margin: 30px 70px;
         }
@@ -362,7 +360,7 @@ body {
     }    
     
     .gridrestaurantcards {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         margin: 30px 70px;
         gap: 40px 60px;
     }
@@ -381,15 +379,40 @@ body {
             align-items: baseline;
         }
 
-        .whitetext{
+        .whitetext {
             font-size: 16px;
         }
    }
+   @media screen and (min-width: 992px) {
+
+    h2+ol {
+        grid-template-columns: repeat(3,1fr);
+
+    }
+    .listnumbers {
+            width: 3px;
+            height: 3px;
+            font-size:10px;
+        }
+
+    .coloricon {
+        font-size: medium;
+    }
+
+    .fonctionnement {
+        margin: 30px 100px;
+    }
+
+    .gridrestaurantcards {
+        grid-template-columns: repeat(2,1fr);
+        margin: 30px 100px;
+        gap: 40px 60px;
+    }
 
 
 
 
-    
+}
 
     
    

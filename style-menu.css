@@ -4,6 +4,10 @@ body {
     margin: 0 auto;
     height: auto;
 }
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
     /* HEADER */
     header {
@@ -20,7 +24,7 @@ body {
         }
 
         header img {
-            width: 50%;
+            width: 60%;
             height: auto;   
         }
 
@@ -74,7 +78,7 @@ body {
         i.fa-heart {
             font-size: 25px;
             position: absolute;
-            right: 40px;
+            right: 20px;
             top: 25px; 
         }
 
@@ -168,8 +172,6 @@ body {
                 background-color: #fff;
                 overflow: hidden;
                 box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-                -webkit-animation: vignette 3s backwards;
-                animation: vignette 3ms backwards;
             }
 
             .vignette-plat .ingredient,
@@ -247,21 +249,6 @@ body {
                 article div {
                     display:flex;
                     justify-content: space-between;
-                }
-
-                @keyframes vignette {
-                    0% {
-                    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-                    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-                    transform: translateY(0.5rem);
-                    opacity: 0%;
-                }
-                100% {
-                    -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-                    animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-                    opacity: 100%;
-                    transform: translateY(0rem);
-                }
                 }
 
                 /* BOUTON COMMANDER */
@@ -346,23 +333,18 @@ body {
 
     i.fa-heart {
         padding: 20px;
-        right: -10px;
+        right: -30px;
         top: 21px;
     }
 
-    .backgroundradius {
-        margin: 0 100px;
-    }
-
-    .backgroundimage{
-        padding-top: 450px;
+    .backgroundimage {
+        padding-top: 495px;
     }
 
     .gridmenus {
         width: 70%;
         margin: 0 auto;
     }
-  
 
     /* FOOTER*/
     .backgroundblack {
@@ -386,5 +368,13 @@ body {
         }
     }
 
+@media screen and (min-width: 992px) {
+    .backgroundradius {
+        margin: 0 100px;
+    }
+    .backgroundimage {
+        padding-top: 630px;
+    }
+}
 
 
