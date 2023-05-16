@@ -5,8 +5,6 @@ body {
     max-width: 1440px;
 }
 
-main
-
     .loader {
         margin: auto;
         position: fixed;
@@ -20,7 +18,7 @@ main
         border-radius: 50%;
         width: 100px;
         height: 100px;
-        animation: spin 2s linear infinite;
+        animation: spin 3s linear infinite;
         z-index:999;
     }
 
@@ -30,7 +28,7 @@ main
             }
             100% {
                 transform: rotate(360deg);
-                visibility: hidden;
+                
             } 
         }
       
@@ -41,7 +39,6 @@ main
             top: 0;
             z-index: 1;
             background: white;
-            opacity: 0.9;
             animation-name: hideLoader;
             animation-duration: 3s;
             animation-fill-mode: forwards;
@@ -55,7 +52,7 @@ main
         opacity: 0.9;
     }
     100% {
-        opacity: 0;
+        opacity: 1;
         visibility: hidden;
         
     }
@@ -294,9 +291,7 @@ main
                             .fa-solid:hover {
                                 opacity: 1;    
                             }
-                            .flexheart .fa-solid:not(:hover) {
-                                background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%, transparent);
-                            }
+                            
 
     /* FOOTER */
     .backgroundblack {
@@ -356,11 +351,10 @@ main
         }
     
     #restaurant h2 {
-        margin-left: 100px;
+        margin-left: 70px;
     }    
     
     .gridrestaurantcards {
-        grid-template-columns: repeat(1,1fr);
         margin: 30px 70px;
         gap: 40px 60px;
     }

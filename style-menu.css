@@ -162,7 +162,7 @@ main {
                 margin: 0 5px 0 0;
             }
 
-            .vignette-plat {
+            .course {
                 display: flex;
                 position: relative;
                 cursor: pointer;
@@ -174,14 +174,14 @@ main {
                 box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
             }
 
-            .vignette-plat .ingredient,
-            .vignette-plat-nom h3 {
+            .course .ingredient,
+            .courseName h3 {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
            
-            .vignette-plat-nom {
+            .courseName {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
@@ -191,31 +191,31 @@ main {
                 transition: all 0.4s ease-in-out;
             }
            
-            .vignette-plat-nom-info {
+            .courseNameInfo {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding-bottom: 5px;
             }
           
-            .plat-detail-prix {
+            .coursePrice {
                 margin: 5px 12px;
                 font-weight: bold;
                 font-size: 15px;
                 transition: all 0.4s ease-in-out;
             }
 
-            .vignette-plat:hover .vignette-plat-nom,
-            .vignette-plat:hover .plat-detail-prix {
+            .course:hover .courseName,
+            .course:hover .coursePrice {
                 padding-right: 35px;
                 transition: all 0.4s ease-in-out;
             }
 
-            .vignette-plat:hover .plat-select {
+            .course:hover .selectCourse {
                 transform:translateX(-70px);
             }
            
-            .plat-select {
+            .selectCourse {
                 position: absolute;
                 transition: all 0.4s ease-in-out;
                 width: 70px;
@@ -338,7 +338,7 @@ main {
     }
 
     .backgroundimage {
-        padding-top: 495px;
+        padding-top: 475px;
     }
 
     .gridmenus {
